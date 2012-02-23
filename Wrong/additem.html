@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- Laura McCool WRONG -->
+<html>
+	<head>
+	<!--	<link rel="stylesheet" href="css/styles.css"/>
+		<meta charset="utf-8"/>
+		<meta name="keywords" content="html5, mobile development, Full Sail University."/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="robots" content="noindex, nofollow"/>
+		<meta name="viewport" content="user-scalable=no, width=device-width"/>
+		<meta name="viewport" content="target-densitydpi=device-dpi"/>
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>-->
+	<title>All I Want for Christmas Is...</title>
+
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/styles.css"/>
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+	
+	 <!-- jQuery - required for jQuery Mobile 
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <!-- My JS
+    <script src="js/min/json.js"></script>
+    <script src="js/min/main.js"></script>
+    <!-- jQuery Mobile JS
+    <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>-->
+    
+   	<!-- jQuery - required for jQuery Mobile -->
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+    <!-- My JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+    </head
+    <body>
+     	<header>
+			<hgroup>
+			<h1><a><img src="images/title2.gif"/></a></h1>
+			</hgroup>
+		</header>
+		<form action="#" method="post" id="giftForm">
+		<!-- /page -->
+		<!--<fieldset>
+				<legend>About this gift:</legend>
+				<ul id="errors"></ul>
+			    	<label for="category">Gift Category</label>
+			    	<select id="category">
+			    	    <option value="Choose">--Choose A Gift Category--</option>
+			    		<option value="Electronics">Electronics</option>
+			    	 	<option value="Entertainment">Entertainment</option>
+			    	 	<option value="Apparel">Apparel</option>
+			    	 	<option value="Music">Music</option>
+			    	 	<option value="Books">Books</option>
+			    	 	<option value="Etc">Etc</option>
+			    	</select>
+			    		<legend>What is it?:</legend>
+				<label for="comments"> Describe the gift:</label><textarea id="comments" placeholder="What is it?"></textarea>
+				<p></p>
+				<legend>Quantity:</legend>
+				<input type="range" id='amount'name="amount" min="1" max="100" />
+			    <p></p>
+			    <legend>Where to buy it:</legend>
+					<input type="radio" checked value="online" id="online" name="location" /><label for="online">Online</label>
+					<input type="radio" value="store" id="store" name="location" /><label for="store">In a store.</label>
+				<p></p>
+				<label for="store">Store Name:</label><input type="text" id="store" placeholder="ex: Zappos.com, Best Buy" />
+				<label for="url">Product URL (if applicable):</label><input type="url" id="url" />
+				<p></p>
+				<legend>Date Added:</legend> <input type="date" id="date" name="user_date" />
+			 </fieldset>
+			 <input type="submit" value="Add it to the list!" id="submit" />
+		</form>-->
+		
+		<div data-role="fieldcontain"> 
+			 	<label for="category" class="select">Gift Category:</label>
+					<select name="category" id="category" data-role="none" data-native-menu="false" class="required">
+  				    	<option value="Choose">Choose A Gift Category</option>
+			    		<option value="Electronics">Electronics</option>
+			    	 	<option value="Entertainment">Entertainment</option>
+			    	 	<option value="Apparel">Apparel</option>
+			    	 	<option value="Music">Music</option>
+			    	 	<option value="Books">Books</option>
+			    	 	<option value="Etc">Etc</option>
+					</select>
+				<br>	
+			 	<label for="comments">Describe the Gift:</label>
+					<textarea name="comments" id="comments" placeholder="What is it?"class="required"></textarea>
+				<br>
+				<label for="quantity">Quantity:</label>
+					<input type="range" name="quantity" id="quantity" value="1" min="1" max="100"/>
+					
+			 <fieldset data-role="controlgroup">
+			  	<legend>Where to buy it:</legend>
+					<input type="radio" name="location" id="online" value="online" checked="checked" />
+     						<label for="online">Online</label>
+     				<input type="radio" name="location" id="store" value="store" />
+     						<label for="store">In a store.</label>
+     		</fieldset>
+     						
+     				<label for="storename">Store Name:</label>
+    					<input type="text" name="storename" id="storename" placeholder="ex: Zappos.com, Best Buy" class="required" />
+    				
+    				<label for="date">Date Added:</label>
+						<input type="date" name="date" id="date" placeholder="MM-DD-YYYY" />
+						
+					<div data-role="fieldcontain"> 
+						 <input type="submit" value="Add it to the list!" data-theme="a" />
+						 <input type="reset" value="Reset Form" />
+					</div>
+  		
+  			<a href="#adderrors" id="rberrorslink" data-rel="dialog" data-transition="pop" >Open Errors</a>						
+		<nav1>
+			<a href="#" id="displayData">View Your List</a>
+			<a href="#" id="clear"> Delete Your List</a>
+			<a href="additem.html" id="addNew" style="display:none;">Add New Item</a>
+		</nav1>
+		
+		<div data-role="footer" data-position="fixed" data-id="home" data-theme="a">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" data-icon="home">Home</a></li>	
+					</ul>
+				</div>
+		</div>
+		
+			<div data-role="dialog" id="adderrors">
+			<div data-role="header" data-position="fixed">
+				<h1>Missing Fields</h1>
+			</div>
+			
+			<div data-role="content">
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html lang="en">
+<head>
+    <title>All I Want for Christmas Is...</title>
+    <link rel="stylesheet" href="../themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../themes/pascal/pascal.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../themes/orman/orman.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="filmstripstyle.css" type="text/css" media="screen" />
+</head>
+<body>
+    <div id="wrapper">
+			<div data-role="header" data-position="fixed" data-theme="c">
+				<img src="images/main-title.gif"/>
+			</div><!-- /header -->
+
+        <div class="slider-wrapper theme-default">
+            <div class="ribbon"></div>
+            <div id="slider" class="nivoSlider">
+                <img src="images/toystory.jpg" alt="" />
+                <img src="images/up.jpg" alt="" />
+                <img src="images/walle.jpg" alt="" data-transition="slideInLeft" />
+                <img src="images/nemo.jpg" alt="" title="#htmlcaption" />
+            </div>
+        </div>
+
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="home" data-theme="a">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" data-icon="home">Home</a></li>
+						<li><a href="#ideas" data-icon="star" class="ui-btn-active">Gift Ideas</a></li>
+					</ul>
+				</div>
+	</div><!-- /footer -->
+
+    <script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</body>
+</html>

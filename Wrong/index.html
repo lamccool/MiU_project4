@@ -1,0 +1,171 @@
+<!doctype html> 
+<!-- WRONG -->
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>All I Want for Christmas Is...</title>
+
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/styles.css"/>
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+	<script src="jsjquery.nivo.slider.js"></script>
+	<script src="jquery.nivo.slider.pack"></script>
+	
+</head>
+<body>
+	<div data-role="page" id="home" data-theme="d">	
+			<div data-role="header" data-position="fixed" data-theme="c">
+				<!--<h5>All I Want for Christmas Is...</h5>-->
+				<img src="images/main-title.gif"/>
+			</div><!-- /header -->
+			<div class="cta"id="cta">
+			<img src="images/coa.gif" id="img"/>
+			</div>
+			<div data-role="content">	
+				<ul data-role="listview" data-inset="true">
+					<li><a href="additem.html" data-ajax="false">
+						<h3>Add Item</h3>
+						<p>Add an item to your list.</p>
+					</a></li>
+					<li><a href="#ideas">
+						<h3>Gift Ideas</h3>
+						<p>Need some inspiration?</p>
+					</a></li>
+					<li><a href="demo.html">
+						<h3>Image Gallery</h3>
+						<p>A gallery of images</p>
+					</a></li>	
+				</ul>	
+		
+			</div><!-- /content -->
+			
+			<div data-role="footer" data-position="fixed" data-id="home"data-theme="a">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="#ideas" data-icon="star">Gift Ideas</a></li>
+
+					</ul>
+				</div>
+			</div><!-- /footer -->
+	
+	</div>
+	
+		<!-- /page -->
+		<div data-role="page" id="ideas" data-theme="d">	
+			<div data-role="header" data-position="fixed" data-theme="d">
+				<img src="images/main-title.gif"/>
+			
+			</div><!-- /header -->
+
+			<div data-role="content">
+				<ul data-role="listview" data-theme="d" data-filter="true"> 
+				<li>
+					<h3>Entertainment</h3>
+						<p>DVD</p>
+						<p>Bluray</p>
+						<p>Video Game</p>
+				</li>
+				<li>
+					<h3>Apparel</h3>
+						<p>Clothes</p>
+						<p>Shoes</p>
+						<p>Jewelry</p>
+				</li>
+				<li>
+					<h3>Music</h3>
+						<p>CDs</p>
+				</li>
+				<li>
+					<h3>Electronics</h3>
+						<p>DVD/Bluray Player</p>
+						<p>TV</p>
+						<p>Playstation 3</p>
+				</li>
+				<li>
+					<h3>Books</h3>
+						<p>Harry Potter</p>
+						<p>Hunger Games</p>
+						<p>Sherlock Holmes</p>
+				</li>
+					
+					<li>
+						<h3>Etc</h3>
+						<p>Gift Cards</p>
+						<p>Cash</p>
+						<p>Video Game</p>
+					</li>
+		</ul>	
+					
+	</div><!-- /content -->
+		
+		<div data-role="footer" data-position="fixed" data-id="home" data-theme="a">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" data-icon="home">Home</a></li>
+						<li><a href="#ideas" data-icon="star" class="ui-btn-active">Gift Ideas</a></li>
+					</ul>
+				</div>
+			</div><!-- /footer -->
+	
+	</div><!-- /page -->	
+	
+		<!-- /page -->
+		<div data-role="page" id="gallery" data-theme="d">	
+			<div data-role="header" data-position="fixed" data-theme="d">
+				<img src="images/main-title.gif"/>
+			
+			</div><!-- /header -->
+
+			<div data-role="content">
+					<ul>
+       					<li><img src="img/photo1.jpg" /></li>
+       		 			<li><img src="img/photo2.jpg" /></li>
+        				<li><img src="img/photo3.jpg" /></li>
+        				<li><img src="img/photo4.jpg" /></li>
+					<ul>
+
+		</div><!-- /content -->
+		
+		<div data-role="footer" data-position="fixed" data-id="home" data-theme="a">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" data-icon="home">Home</a></li>
+						<li><a href="#ideas" data-icon="star" class="ui-btn-active">Gift Ideas</a></li>
+					</ul>
+				</div>
+			</div><!-- /footer -->
+	
+	</div><!-- /page -->		
+	
+
+	
+	
+			
+</div>
+
+
+
+	
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script src="js/libs/modernizr.custom.min.js"></script>
+	<script src="jsjquery.nivo.slider.js"></script>
+	<script src="jquery.nivo.slider.pack"></script>
+
+</body>
+</html>
